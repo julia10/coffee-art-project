@@ -73,25 +73,30 @@
 </style>
 
 <title>Coffee Art</title>
+
 <body>
 
 	<!-- Navbar (sit on top) -->
 	<div class="w3-top">
 		<div class="w3-bar" id="myNavbar">
-			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-				href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+				onclick="toggleFunction()" title="Toggle Navigation Menu">
 				<i class="fa fa-bars"></i>
 			</a>
 			<a href="#home" class="w3-bar-item w3-button"><i class="fa fa-coffee"></i>HOME</a>
 			<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-			<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-th"></i> PORTFOLIO</a>
+			<a href="#shops" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"></i> SHOPS</a>
+			<a href="#types" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-th"></i> TYPES</a>
+			<a href="#health" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-heart"></i> HEALTH</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
 		</div>
 
 		<!-- Navbar on small screens -->
 		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
 			<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-			<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+			<a href="#shops" class="w3-bar-item w3-button" onclick="toggleFunction()">SHOPS</a>
+			<a href="#types" class="w3-bar-item w3-button" onclick="toggleFunction()">TYPES</a>
+			<a href="#health" class="w3-bar-item w3-button" onclick="toggleFunction()">HEALTH</a>
 			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
 			<a href="#" class="w3-bar-item w3-button">SEARCH</a>
 		</div>
@@ -105,10 +110,11 @@
 		</div>
 	</div>
 
+
 	<!-- Container (About Section) -->
-	<div class="w3-content w3-container w3-padding-64" id="about">
-		<h3 class="w3-center">ABOUT ME</h3>
-		<p class="w3-center"><em>I love photography</em></p>
+	<div class="w3-content w3-container w3-padding-32" id="about">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">ABOUT</h3>
+		<p><em>I love coffee</em></p>
 		<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 			dolore magna aliqua. Ut enim ad minim veniam,
@@ -120,9 +126,8 @@
 			laboris nisi ut aliquip ex ea commodo consequat.</p>
 		<div class="w3-row">
 			<div class="w3-col m6 w3-center w3-padding-large">
-				<p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-				<img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
-					alt="Photo of Me" width="500" height="333">
+				<img src="images/Content/about-coffee.jpg" class="w3-round w3-image " alt="Photo of Me" width="500"
+					height="333">
 			</div>
 
 			<!-- Hide this text on small devices -->
@@ -137,97 +142,135 @@
 					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 		</div>
-		<p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-		<p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-		<div class="w3-light-grey">
-			<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-		</div>
-		<p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-		<div class="w3-light-grey">
-			<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-		</div>
-		<p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-		<div class="w3-light-grey">
-			<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+	</div>
+
+	<!--Most popular coffee shops list-->
+	<div class="w3-content w3-container w3-padding-32" id="shops">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">Most popular coffee shops in Ireland</h3>
+		<p class="w3-margin"><em>Here is a list of best coffee shops in my opinion</em></p><br>
+
+		<div class="w3-container">
+			<ul class="w3-ul w3-card-4">
+				<li class="w3-bar">
+					<img src="images/Content/logos/costa_logo.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+					<div class="w3-bar-item">
+						<span class="w3-large"><a href="https://www.costaireland.ie/" target="_blank"> Costa </a></span><br>
+						<span>Founded in 1971, London, United Kingdom</span>
+					</div>
+				</li>
+
+				<li class="w3-bar">
+					<img src="images/content/logos/starbucks_logo.png" class="w3-bar-item w3-circle w3-hide-small"
+						style="width:85px">
+					<div class="w3-bar-item">
+						<span class="w3-large"><a href="https://www.starbucks.ie" target="_blank">Starbucks</a></span><br>
+						<span>Founded in 1971, Pike Place Market, Seattle, Washington, United States</span>
+					</div>
+				</li>
+
+				<li class="w3-bar">
+					<img src="images/content/logos/caffe_nero.jpg" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+					<div class="w3-bar-item">
+						<span class="w3-large"><a href="https://caffenero.com/ie/" target="_blank">Cafe Nero</a></span><br>
+						<span>Founded in 1997, United Kingdom</span>
+					</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 
 	<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-		<div class="w3-quarter w3-section">
-			<span class="w3-xlarge">14+</span><br>
-			Partners
+		<div>
+			<p1 class="w3-center">
+				Stores all over the world
+			</p1>
 		</div>
-		<div class="w3-quarter w3-section">
-			<span class="w3-xlarge">55+</span><br>
-			Projects Done
+		<div class="w3-third w3-section">
+			<span class="w3-xlarge">24,395+</span><br>
+			STARBUCKS
 		</div>
-		<div class="w3-quarter w3-section">
-			<span class="w3-xlarge">89+</span><br>
-			Happy Clients
+		<div class="w3-third w3-section">
+			<span class="w3-xlarge">3,882+</span><br>
+			COSTA
 		</div>
-		<div class="w3-quarter w3-section">
-			<span class="w3-xlarge">150+</span><br>
-			Meetings
+		<div class="w3-third w3-section">
+			<span class="w3-xlarge">822 +</span><br>
+			CafeNero
 		</div>
 	</div>
+
 
 	<!-- Second Parallax Image with Portfolio Text -->
 	<div class="bgimg-2 w3-display-container w3-opacity-min">
 		<div class="w3-display-middle">
-			<span class="w3-xxlarge w3-text-dark-grey w3-wide">PORTFOLIO</span>
+			<span class="w3-xxlarge w3-text-dark-grey w3-wide">COFFEE TYPES</span>
 		</div>
 	</div>
 
-	<!-- Container (Portfolio Section) -->
-	<div class="w3-content w3-container w3-padding-64" id="portfolio">
-		<h3 class="w3-center">MY WORK</h3>
-		<p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make
-				them bigger</em></p><br>
+	<!-- Container (Coffee Types Section) -->
+	<div class="w3-content w3-container w3-padding-32" id="types">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">Types</h3>
+		<p class="w3-margin"><em>Here are some of the most popular coffee types drunk by irish people</em></p><br>
 
-		<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-		<div class="w3-row-padding w3-center">
-			<div class="w3-col m3">
-				<img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-					alt="The mist over the mountains">
+		<!-- First Photo Grid-->
+		<div class="w3-row-padding w3-padding-16 w3-center" id="food">
+			<div class="w3-quarter">
+				<img src="images/content/americano.jpg " alt="Caffè Americano" width="100%" height="300px"
+					onclick="onClick(this)" class="w3-hover-opacity">
+				<h3>Caffè Americano</h3>
+				<p>An Americano is simply an espresso that has been poured over, or been diluted with hot water.</p>
 			</div>
 
-			<div class="w3-col m3">
-				<img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-					alt="Coffee beans">
+			<div class="w3-quarter">
+				<img src="images/content/esspresso.jpg" alt="Espresso" width="100%" height="300px" onclick="onClick(this)"
+					class="w3-hover-opacity">
+				<h3>Espresso </h3>
+				<p>Espresso is a full-flavored, concentrated form of coffee that is served in “shots.” </p>
 			</div>
 
-			<div class="w3-col m3">
-				<img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-					alt="Bear closeup">
+			<div class="w3-quarter">
+				<img src="images/content/latte.jpg" alt="Latte" width="100%" height="300px" onclick="onClick(this)"
+					class="w3-hover-opacity">
+				<h3>Café Latte</h3>
+				<p>A caffè latte is simply a shot or two of bold, tasty espresso with fresh, sweet steamed milk over it.
+				</p>
 			</div>
-
-			<div class="w3-col m3">
-				<img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-					alt="Quiet ocean">
+			<div class="w3-quarter">
+				<img src="images/content/machiato.jpg" alt="Macchiato" width="100%" height="300px" onclick="onClick(this)"
+					class="w3-hover-opacity">
+				<h3>Espresso macchiato</h3>
+				<p>The espresso macchiato is an espresso topped with steamed milk foam
+				</p>
 			</div>
 		</div>
 
-		<div class="w3-row-padding w3-center w3-section">
-			<div class="w3-col m3">
-				<img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-					alt="The mist">
+		<!--Second Photo grid-->
+		<div class="w3-row-padding w3-padding-16 w3-center">
+			<div class="w3-quarter">
+				<img src="images/content/ices-latte.jpg" alt="Iced Latte" width="100%" height="300px" onclick="onClick(this)"
+					class="w3-hover-opacity">
+				<h3>Iced Latte</h3>
+				<p>A summer version of Café Latte with ice </p>
 			</div>
-
-			<div class="w3-col m3">
-				<img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-					alt="My beloved typewriter">
+			<div class="w3-quarter">
+				<img src="images/content/capucino.jpg" alt="Cappuccino" width="100%" height="300px" onclick="onClick(this)"
+					class="w3-hover-opacity">
+				<h3>Cappuccino</h3>
+				<p>A cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk foam
+					(microfoam).</p>
 			</div>
-
-			<div class="w3-col m3">
-				<img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-					alt="Empty ghost train">
+			<div class="w3-quarter">
+				<img src="images/content/flat-white.jpg" alt="Flat White" width="100%" height="300px" onclick="onClick(this)"
+					class="w3-hover-opacity">
+				<h3>Flat white</h3>
+				<p>It is comparable to a latte, but smaller in volume and with less microfoam.</p>
 			</div>
-
-			<div class="w3-col m3">
-				<img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-					alt="Sailing">
+			<div class="w3-quarter">
+				<img src="images/content/irish-coffee.jpg" alt="Irish Coffee" width="100%" height="300px"
+					onclick="onClick(this)" class="w3-hover-opacity">
+				<h3>Irish Coffee</h3>
+				<p>It`s a cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream.</p>
 			</div>
-			<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
 		</div>
 	</div>
 
@@ -236,7 +279,7 @@
 		<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
 				class="fa fa-remove"></i></span>
 		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-			<img id="img01" class="w3-image">
+			<img id="img01" class="w3-image" width="30%" height="20%">
 			<p id="caption" class="w3-opacity w3-large"></p>
 		</div>
 	</div>
@@ -244,91 +287,166 @@
 	<!-- Third Parallax Image with Portfolio Text -->
 	<div class="bgimg-3 w3-display-container w3-opacity-min">
 		<div class="w3-display-middle">
-			<span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+			<span class="w3-xxlarge w3-text-white w3-wide">HEALTH</span>
 		</div>
 	</div>
 
-	<!-- Container (Contact Section) -->
-	<div class="w3-content w3-container w3-padding-64" id="contact">
-		<h3 class="w3-center">WHERE I WORK</h3>
-		<p class="w3-center"><em>I'd love your feedback!</em></p>
+	<!--Health Section-->
 
-		<div class="w3-row w3-padding-32 w3-section">
-			<div class="w3-col m4 w3-container">
-				<img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+	<!-- Container (About Section) -->
+	<div class="w3-content w3-container w3-padding-32" id="health">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">How coffee impacts your health?</h3>
+		<p class="w3-margin">
+			Coffee has been around for a long time and blamed for many ills — from stunting your growth to causing heart
+			disease — but newer research shows that it may actually have health benefits.
+		</p>
+		<p class="w3-margin">
+			Recent studies have generally found no connection between coffee and an increased risk of heart disease or
+			cancer.
+		</p>
+		<p class="w3-margin">In fact, some studies have found an association between coffee consumption and decreased
+			overall mortality and
+			possibly cardiovascular mortality, although this may not be true in younger people who drink large amounts of
+			coffee. </p>
+
+
+
+
+		<div class="w3-row">
+			<div class="w3-col m6 w3-center w3-padding-large">
+				<img src="images/Content/about2.jpg" class="w3-round w3-image " alt="Photo of Me" width="500" height="333">
 			</div>
-			<div class="w3-col m8 w3-panel">
-				<div class="w3-large w3-margin-bottom">
-					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-					<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
-					151515<br>
-					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-					mail@mail.com<br>
+
+			<!-- Hide this text on small devices -->
+			<div class="w3-col m6 w3-hide-small w3-padding-large">
+
+				<p class="w3-margin">
+					Why the apparent reversal in the thinking about coffee? Earlier studies didn't always take into account that
+					known high-risk behaviors, such as smoking and physical inactivity, tended to be more common among heavy
+					coffee
+					drinkers.
+				</p>
+
+				<p class="w3-margin">
+					Studies have shown that coffee may have health benefits, including protecting against Parkinson's disease,
+					type
+					2 diabetes and liver disease, including liver cancer. Coffee also appears to improve cognitive function and
+					decrease the risk of depression.
+				</p>
+
+				<p class="w3-margin">
+					However, the research appears to bear out some risks. High consumption of unfiltered coffee (boiled or
+					espresso)
+					has been associated with mild elevations in cholesterol levels.
+				</p>
+
+				<p class="w3-margin">
+					In addition, some studies found that two or more cups of coffee a day can increase the risk of heart disease
+					in
+					people with a specific — and fairly common — genetic mutation that slows the breakdown of caffeine in the
+					body.
+					So, how quickly you metabolize coffee may affect your health risk.
+				</p>
+
+				<p class="w3-margin">Although coffee may have fewer risks compared with benefits, keep in mind that other
+					beverages, such as milk and
+					some fruit juices, contain nutrients that coffee doesn't. Also, adding cream and sugar to your coffee adds fat
+					and calories — up to hundreds of calories in some cases.</p>
+
+			</div>
+		</div>
+		<p class="w3-margin">
+			<em>
+				Hensrud, D. (2019). The surprising health benefits of coffee. [online] Mayo Clinic. Available at:
+				https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/coffee-and-health/faq-20058339
+				[Accessed 7 Oct. 2019].
+			</em>
+		</p>
+	</div>
+
+
+
+		<!-- Container (Contact Section) -->
+		<div class="w3-content w3-container w3-padding-64" id="contact">
+			<h3 class="w3-center">WHERE I WORK</h3>
+			<p class="w3-center"><em>I'd love your feedback!</em></p>
+
+			<div class="w3-row w3-padding-32 w3-section">
+				<div class="w3-col m4 w3-container">
+					<img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
 				</div>
-				<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-				<form action="/action_page.php" target="_blank">
-					<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-						<div class="w3-half">
-							<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-						</div>
-						<div class="w3-half">
-							<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-						</div>
+				<div class="w3-col m8 w3-panel">
+					<div class="w3-large w3-margin-bottom">
+						<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+						<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
+						151515<br>
+						<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+						mail@mail.com<br>
 					</div>
-					<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-					<button class="w3-button w3-black w3-right w3-section" type="submit">
-						<i class="fa fa-paper-plane"></i> SEND MESSAGE
-					</button>
-				</form>
+					<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+					<form action="/action_page.php" target="_blank">
+						<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+							<div class="w3-half">
+								<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+							</div>
+							<div class="w3-half">
+								<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+							</div>
+						</div>
+						<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+						<button class="w3-button w3-black w3-right w3-section" type="submit">
+							<i class="fa fa-paper-plane"></i> SEND MESSAGE
+						</button>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- Footer -->
-	<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-		<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-		<div class="w3-xlarge w3-section">
-			<i class="fa fa-facebook-official w3-hover-opacity"></i>
-			<i class="fa fa-instagram w3-hover-opacity"></i>
-			<i class="fa fa-snapchat w3-hover-opacity"></i>
-			<i class="fa fa-pinterest-p w3-hover-opacity"></i>
-			<i class="fa fa-twitter w3-hover-opacity"></i>
-			<i class="fa fa-linkedin w3-hover-opacity"></i>
-		</div>
-		<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-				class="w3-hover-text-green">w3.css</a></p>
-	</footer>
+		<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+			<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+			<div class="w3-xlarge w3-section">
+				<i class="fa fa-facebook-official w3-hover-opacity"></i>
+				<i class="fa fa-instagram w3-hover-opacity"></i>
+				<i class="fa fa-snapchat w3-hover-opacity"></i>
+				<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+				<i class="fa fa-twitter w3-hover-opacity"></i>
+				<i class="fa fa-linkedin w3-hover-opacity"></i>
+			</div>
+			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+					class="w3-hover-text-green">w3.css</a></p>
+		</footer>
 
-	<script>
-		// Modal Image Gallery
-		function onClick(element) {
-			document.getElementById("img01").src = element.src;
-			document.getElementById("modal01").style.display = "block";
-			var captionText = document.getElementById("caption");
-			captionText.innerHTML = element.alt;
-		}
-
-		// Change style of navbar on scroll
-		window.onscroll = function () { myFunction() };
-		function myFunction() {
-			var navbar = document.getElementById("myNavbar");
-			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-				navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-			} else {
-				navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+		<script>
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
 			}
-		}
 
-		// Used to toggle the menu on small screens when clicking on the menu button
-		function toggleFunction() {
-			var x = document.getElementById("navDemo");
-			if (x.className.indexOf("w3-show") == -1) {
-				x.className += " w3-show";
-			} else {
-				x.className = x.className.replace(" w3-show", "");
+			// Change style of navbar on scroll
+			window.onscroll = function () { myFunction() };
+			function myFunction() {
+				var navbar = document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+				} else {
+					navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+				}
 			}
-		}
-	</script>
+
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else {
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+		</script>
 
 </body>
 
