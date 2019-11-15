@@ -1,9 +1,13 @@
 
 
-#menu{
-	color: whitesmoke; 
-}
 
 .heading-padding{
 	padding-top: 64pt;
 }
+
+.grid-image{
+	width:100%;
+	height:250px;
+	object-fit: cover;
+}
+
