@@ -11,3 +11,12 @@
 	object-fit: cover;
 }
 
+.text-image{
+	margin-right: 20pt;
+	margin-bottom: 20pt;
+	float: left;
+	width:400px;
+	height:500px;
+}
+.mySlides {display:none;}
+

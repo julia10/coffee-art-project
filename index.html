@@ -27,28 +27,35 @@
 	/* Create a Parallax Effect */
 	.bgimg-1,
 	.bgimg-2,
-	.bgimg-3 {
+	.bgimg-3,
+	.bgimg-4 {
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 
-	/* First image (Logo. Full height) */
+	/* First image (Coffee home) */
 	.bgimg-1 {
 		background-image: url('images/content/background-min.jpg');
 		min-height: 100%;
 	}
 
-	/* Second image (Portfolio) */
+	/* Second image (Cofee Types) */
 	.bgimg-2 {
 		background-image: url("images/content/beans-min.jpg");
 		min-height: 400px;
 	}
 
-	/* Third image (Contact) */
+	/* Third image (Health) */
 	.bgimg-3 {
 		background-image: url("images/content/background2-min.jpg");
+		min-height: 400px;
+	}
+
+	/* Forth image (Latte Art) */
+	.bgimg-4 {
+		background-image: url("images/content/background3.jpg");
 		min-height: 400px;
 	}
 
@@ -88,6 +95,8 @@
 			<a href="#shops" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"></i> SHOPS</a>
 			<a href="#types" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-th"></i> TYPES</a>
 			<a href="#health" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-heart"></i> HEALTH</a>
+			<a href="#latte-art" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-pagelines"></i> LATTE
+				ART</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
 		</div>
 
@@ -97,12 +106,13 @@
 			<a href="#shops" class="w3-bar-item w3-button" onclick="toggleFunction()">SHOPS</a>
 			<a href="#types" class="w3-bar-item w3-button" onclick="toggleFunction()">TYPES</a>
 			<a href="#health" class="w3-bar-item w3-button" onclick="toggleFunction()">HEALTH</a>
+			<a href="#latte-art" class="w3-bar-item w3-button" onclick="toggleFunction()">LATTE ART</a>
 			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
 			<a href="#" class="w3-bar-item w3-button">SEARCH</a>
 		</div>
 	</div>
 
-	<!-- First Parallax Image with Logo Text -->
+	<!--First Parallax Image with Logo Text -->
 	<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
 		<div class="w3-display-bottommiddle w3-padding-64" style="white-space:nowrap;">
 			<span class=" w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">COFFEE <span
@@ -110,47 +120,38 @@
 		</div>
 	</div>
 
-
 	<!-- Container (About Section) -->
-	<div class="w3-content w3-container w3-padding-32" id="about">
-		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">ABOUT</h3>
-		<p><em>I love coffee</em></p>
-		<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-			dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-			reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-			cupidatat non proident, sunt in culpa
-			qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-			incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-			laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<div class="w3-content w3-container w3-padding-16" id="about">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin w3-center">ABOUT</h3>
+		<p></p>
 		<div class="w3-row">
-			<div class="w3-col m6 w3-center w3-padding-large">
-				<img src="images/content/about-coffee-min.jpg" class="w3-round w3-image " alt="Photo of Me" width="500"
-					height="333">
-			</div>
+			<p class="w3-margin w3-center"><em>We all love coffee</em></p><br>
+			<p class="w3-margin">
+				<img src="images/content/about-coffee-min.jpg" class="w3-round w3-image text-image" alt="Photo of Me">
 
-			<!-- Hide this text on small devices -->
-			<div class="w3-col m6 w3-hide-small w3-padding-large">
-				<p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-					nisi ut aliquip ex ea commodo consequat. Duis aute irure
-					dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-					sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-					consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
+				Coffee is among the most consumed — and controversial — beverages in the world. While coffee should
+				be treated with care and avoided altogether by those who metabolize it poorly, it also provides health
+				benefits to many people. <br /><br />
+
+				Coffee is the second most popular drink in the world, trailing only water and, debatably, tea.
+				Caffeine, a key component of coffee, is a controversial compound. With 90% of North American adults
+				consuming caffeine daily, it is the world’s most consumed psychoactive drug – and coffee is the
+				delivery method of choice.<br /><br />
+
+				Perhaps that’s why, in the fitness world, we’ve traditionally viewed coffee with some
+				suspicion.But is coffee really bad for us? Should we give up our beloved cuppa joe? If it’s bad, why
+				does it
+				feel so good?</p>
 		</div>
 	</div>
 
 	<!--Most popular coffee shops list-->
-	<div class="w3-content w3-container w3-padding-32" id="shops">
+	<div class="w3-content w3-container" id="shops">
 		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">Most popular coffee shops in Ireland
 		</h3>
 		<p class="w3-margin"><em>Here is a list of best coffee shops in my opinion</em></p><br>
 
-		<div class="w3-container">
+		<div class="w3-container w3-margin">
 			<ul class="w3-ul w3-card-4">
 				<li class="w3-bar">
 					<img src="images/content/logos/costa_logo.png" class="w3-bar-item w3-circle w3-hide-small"
@@ -260,7 +261,7 @@
 				<p>A summer version of Café Latte with ice </p>
 			</div>
 			<div class="w3-quarter">
-				<img src="images/content/capucino-min.jpg" alt="Cappuccino" onclick="onClick(this)"
+				<img src="images/content/latteart2.jpg" alt="Cappuccino" onclick="onClick(this)"
 					class="w3-hover-opacity grid-image">
 				<h3>Cappuccino</h3>
 				<p>A cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk foam
@@ -269,7 +270,7 @@
 			<div class="w3-quarter">
 				<img src="images/content/flat-white-min.jpg" alt="Flat White" onclick="onClick(this)"
 					class="w3-hover-opacity grid-image">
-				<h3>Flat white</h3>
+				<h3>Flat White</h3>
 				<p>It is comparable to a latte, but smaller in volume and with less microfoam.</p>
 			</div>
 			<div class="w3-quarter">
@@ -304,103 +305,117 @@
 	<!-- Container (About Section) -->
 	<div class="w3-content w3-container w3-padding-32" id="health">
 		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">How coffee impacts your health?</h3>
-		<p class="w3-margin">
-			Coffee has been around for a long time and blamed for many ills — from stunting your growth to causing heart
-			disease — but newer research shows that it may actually have health benefits.
-		</p>
-		<p class="w3-margin">
-			Recent studies have generally found no connection between coffee and an increased risk of heart disease or
-			cancer.
-		</p>
-		<p class="w3-margin">In fact, some studies have found an association between coffee consumption and decreased
-			overall mortality and
-			possibly cardiovascular mortality, although this may not be true in younger people who drink large amounts
-			of
-			coffee. </p>
+		<div class="w3-margin">
+			<p>
+				Coffee has been around for a long time and blamed for many ills — from stunting your growth to causing
+				heart
+				disease — but newer research shows that it may actually have health benefits.<br /><br />
 
 
+				Recent studies have generally found no connection between coffee and an increased risk of heart disease
+				or
+				cancer.<br /><br />
 
+				In fact, some studies have found an association between coffee consumption and decreased
+				overall mortality and
+				possibly cardiovascular mortality, although this may not be true in younger people who drink large
+				amounts
+				of
+				coffee. <br /><br />
+			</p>
 
-		<div class="w3-row">
-			<div class="w3-col m6 w3-center w3-padding-large">
-				<img src="images/content/about2-min.jpg" class="w3-round w3-image " alt="Photo of Me" width="500"
-					height="333">
-			</div>
+			<p>
 
-			<!-- Hide this text on small devices -->
-			<div class="w3-col m6 w3-hide-small w3-padding-large">
+				<img src="images/content/about2-min.jpg" class="w3-round w3-image text-image" alt="Coffee picture">
 
-				<p class="w3-margin">
-					Why the apparent reversal in the thinking about coffee? Earlier studies didn't always take into
-					account that
-					known high-risk behaviors, such as smoking and physical inactivity, tended to be more common among
-					heavy
-					coffee
-					drinkers.
-				</p>
+				Why the apparent reversal in the thinking about coffee? Earlier studies didn't always take into
+				account that
+				known high-risk behaviors, such as smoking and physical inactivity, tended to be more common among
+				heavy
+				coffee
+				drinkers.<br /><br />
+				Studies have shown that coffee may have health benefits, including protecting against Parkinson's
+				disease,
+				type
+				2 diabetes and liver disease, including liver cancer. Coffee also appears to improve cognitive
+				function and
+				decrease the risk of depression.<br /><br />
+				However, the research appears to bear out some risks. High consumption of unfiltered coffee (boiled
+				or
+				espresso)
+				has been associated with mild elevations in cholesterol levels.<br /><br />
+				In addition, some studies found that two or more cups of coffee a day can increase the risk of heart
+				disease
+				in
+				people with a specific — and fairly common — genetic mutation that slows the breakdown of caffeine
+				in the
+				body.
+				So, how quickly you metabolize coffee may affect your health risk.<br /><br />Although coffee may
+				have fewer risks compared with benefits, keep in mind that
+				other
+				beverages, such as milk and
+				some fruit juices, contain nutrients that coffee doesn't. Also, adding cream and sugar to your
+				coffee adds fat
+				and calories — up to hundreds of calories in some cases.
+			</p>
 
-				<p class="w3-margin">
-					Studies have shown that coffee may have health benefits, including protecting against Parkinson's
-					disease,
-					type
-					2 diabetes and liver disease, including liver cancer. Coffee also appears to improve cognitive
-					function and
-					decrease the risk of depression.
-				</p>
-
-				<p class="w3-margin">
-					However, the research appears to bear out some risks. High consumption of unfiltered coffee (boiled
-					or
-					espresso)
-					has been associated with mild elevations in cholesterol levels.
-				</p>
-
-				<p class="w3-margin">
-					In addition, some studies found that two or more cups of coffee a day can increase the risk of heart
-					disease
-					in
-					people with a specific — and fairly common — genetic mutation that slows the breakdown of caffeine
-					in the
-					body.
-					So, how quickly you metabolize coffee may affect your health risk.
-				</p>
-
-				<p class="w3-margin">Although coffee may have fewer risks compared with benefits, keep in mind that
-					other
-					beverages, such as milk and
-					some fruit juices, contain nutrients that coffee doesn't. Also, adding cream and sugar to your
-					coffee adds fat
-					and calories — up to hundreds of calories in some cases.</p>
-
-			</div>
+			<p>
+				<em>
+					Hensrud, D. (2019). The surprising health benefits of coffee. [online] Mayo Clinic. Available at:
+					https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/coffee-and-health/faq-20058339
+					[Accessed 7 Oct. 2019].
+				</em>
+			</p>
 		</div>
-		<p class="w3-margin">
-			<em>
-				Hensrud, D. (2019). The surprising health benefits of coffee. [online] Mayo Clinic. Available at:
-				https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/coffee-and-health/faq-20058339
-				[Accessed 7 Oct. 2019].
-			</em>
-		</p>
+
 	</div>
 
+	<!-- Latte Art -->
+
+	<!-- Forth Parallax Image with Portfolio Text -->
+	<div class="bgimg-4 w3-display-container w3-opacity-min">
+		<div class="w3-display-middle">
+			<span class="w3-xxlarge w3-text-white w3-wide">LATTE ART</span>
+		</div>
+	</div>
+
+	<!--Health Section-->
+
+	<!-- Container (About Section) -->
+	<div class="w3-content w3-container w3-padding-32" id="latte-art">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">A few examples latte drawings</h3>
+		<div class="w3-margin">
+			<p><em>Navigate through images with arrows</em></p><br>
+
+
+			<div class="w3-content" style="max-width:800px;position:relative">
+
+				<img class="mySlides" src="images/slideshow1.jpg" style="width:100%">
+				<img class="mySlides" src="images/slideshow2.jpg" style="width:100%">
+
+				<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+				<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+			</div>
+
+		</div>
+
+	</div>
 
 
 	<!-- Container (Contact Section) -->
 	<div class="w3-content w3-container w3-padding-64" id="contact">
-		<h3 class="w3-center">WHERE I WORK</h3>
-		<p class="w3-center"><em>I'd love your feedback!</em></p>
+		<h3 class="w3-center">CONTACT</h3>
 
 		<div class="w3-row w3-padding-32 w3-section">
-			<div class="w3-col m4 w3-container">
-				<img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
-			</div>
-			<div class="w3-col m8 w3-panel">
+			<div class=" w3-panel">
 				<div class="w3-large w3-margin-bottom">
-					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-					<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00
-					151515<br>
+					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Athlone,
+					Ireland<br>
+					<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 085 825
+					4699<br>
 					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-					mail@mail.com<br>
+					yulia.dovbak@gmail.com<br>
 				</div>
 				<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
 				<form action="/action_page.php" target="_blank">
@@ -424,19 +439,29 @@
 	<!-- Footer -->
 	<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
 		<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-		<div class="w3-xlarge w3-section">
-			<i class="fa fa-facebook-official w3-hover-opacity"></i>
-			<i class="fa fa-instagram w3-hover-opacity"></i>
-			<i class="fa fa-snapchat w3-hover-opacity"></i>
-			<i class="fa fa-pinterest-p w3-hover-opacity"></i>
-			<i class="fa fa-twitter w3-hover-opacity"></i>
-			<i class="fa fa-linkedin w3-hover-opacity"></i>
-		</div>
-		<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-				class="w3-hover-text-green">w3.css</a></p>
+		<p>Yuliia Dovbak</a></p>
 	</footer>
 
 	<script>
+		// Slideshow
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = x.length };
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex - 1].style.display = "block";
+		}
+
 		// Modal Image Gallery
 		function onClick(element) {
 			document.getElementById("img01").src = element.src;
