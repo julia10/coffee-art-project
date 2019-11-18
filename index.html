@@ -18,17 +18,10 @@
 		background-size: cover;
 	}
 
-	/* First image (Coffee home) */
+	/* Paralax image (Coffee home) */
 	.bgimg-1 {
 		background-image: url('images/content/background-min.jpg');
 		min-height: 100%;
-	}
-
-
-	/* Third image (Health) */
-	.bgimg-3 {
-		background-image: url("images/content/background2-min.jpg");
-		min-height: 400px;
 	}
 
 	.w3-wide {
@@ -42,8 +35,7 @@
 	/* Turn off parallax scrolling for tablets and phones */
 	@media only screen and (max-device-width: 1024px) {
 
-		.bgimg-1,
-		.bgimg-3 {
+		.bgimg-1 {
 			background-attachment: scroll;
 			min-height: 400px;
 		}
@@ -56,36 +48,34 @@
 
 	<!-- Navbar (sit on top) -->
 	<div class="w3-top">
-		<div class="w3-bar" id="myNavbar">
+		<div class="w3-bar w3-card w3-white" id="myNavbar">
 			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
 				href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 				<i class="fa fa-bars"></i>
 			</a>
-			<a href="#home" class="w3-bar-item w3-button"><i class="fa fa-coffee"></i>HOME</a>
-			<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-			<a href="#shops" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"></i> SHOPS</a>
+			<a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-coffee"></i> HOME</a>
 			<a href="types.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-th"></i> TYPES</a>
 			<a href="health.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-heart"></i> HEALTH</a>
 			<a href="latte-art.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-pagelines"></i> LATTE
 				ART</a>
-			<a href="report.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-align-left"></i> REPORT</a>
-			<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+			<a href="report.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-align-left"></i>
+				REPORT</a>
+			<a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>
+				CONTACT</a>
 		</div>
 
 		<!-- Navbar on small screens -->
 		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-			<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-			<a href="#shops" class="w3-bar-item w3-button" onclick="toggleFunction()">SHOPS</a>
 			<a href="types.html" class="w3-bar-item w3-button" ">TYPES</a>
 			<a href=" health.html" class="w3-bar-item w3-button">HEALTH</a>
 			<a href="latte-art.html" class="w3-bar-item w3-button">LATTE ART</a>
 			<a href="report.html" class="w3-bar-item w3-button">REPORT</a>
-			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+			<a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
 		</div>
 	</div>
 
 	<!--First Parallax Image with Logo Text -->
-	<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+	<div class="bgimg-1 w3-display-container w3-opacity-min">
 		<div class="w3-display-bottommiddle w3-padding-64" style="white-space:nowrap;">
 			<span class=" w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">COFFEE <span
 					class="w3-hide-small">ART</span></span>
@@ -93,13 +83,13 @@
 	</div>
 
 	<!-- Container (About Section) -->
-	<div class="w3-content w3-container w3-padding-16" id="about">
+	<div class="w3-content w3-container w3-padding-16">
 		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin w3-center">ABOUT</h3>
 		<p></p>
 		<div class="w3-row">
 			<p class="w3-margin w3-center"><em>We all love coffee</em></p><br>
 			<p class="w3-margin">
-				<img src="images/content/about-coffee-min.jpg" class="w3-round w3-image text-image" alt="Photo of Me">
+				<img src="images/content/about-coffee-min.jpg" class="w3-round w3-image text-image" alt="Coffee photo">
 
 				Coffee is among the most consumed — and controversial — beverages in the world. While coffee should
 				be treated with care and avoided altogether by those who metabolize it poorly, it also provides health
@@ -117,11 +107,13 @@
 		</div>
 	</div>
 
+
+
 	<!--Most popular coffee shops list-->
-	<div class="w3-content w3-container" id="shops">
-		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">Most popular coffee shops in Ireland
+	<div class="w3-content w3-container">
+		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin w3-center">Most popular coffee shops in Ireland
 		</h3>
-		<p class="w3-margin"><em>Here is a list of best coffee shops in my opinion</em></p><br>
+		<p class="w3-margin w3-center"><em>Here is a list of best coffee shops in my opinion</em></p><br>
 
 		<div class="w3-container w3-margin">
 			<ul class="w3-ul w3-card-4">
@@ -156,167 +148,40 @@
 				</li>
 			</ul>
 		</div>
-	</div>
 
-	<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-		<div>
-			<p1 class="w3-center">
-				Stores all over the world
-			</p1>
-		</div>
-		<div class="w3-third w3-section">
-			<span class="w3-xlarge">24,395+</span><br>
-			STARBUCKS
-		</div>
-		<div class="w3-third w3-section">
-			<span class="w3-xlarge">3,882+</span><br>
-			COSTA
-		</div>
-		<div class="w3-third w3-section">
-			<span class="w3-xlarge">822 +</span><br>
-			CafeNero
-		</div>
-	</div>
-
-
-	<!-- Third Parallax Image with Portfolio Text -->
-	<div class="bgimg-3 w3-display-container w3-opacity-min">
-		<div class="w3-display-middle">
-			<span class="w3-xxlarge w3-text-white w3-wide">HEALTH</span>
-		</div>
-	</div>
-
-	<!--Health Section-->
-
-	<!-- Container (About Section) -->
-	<div class="w3-content w3-container w3-padding-32" id="health">
-		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">How coffee impacts your health?</h3>
-		<div class="w3-margin">
-			<p>
-				Coffee has been around for a long time and blamed for many ills — from stunting your growth to causing
-				heart
-				disease — but newer research shows that it may actually have health benefits.<br /><br />
-
-
-				Recent studies have generally found no connection between coffee and an increased risk of heart disease
-				or
-				cancer.<br /><br />
-
-				In fact, some studies have found an association between coffee consumption and decreased
-				overall mortality and
-				possibly cardiovascular mortality, although this may not be true in younger people who drink large
-				amounts
-				of
-				coffee. <br /><br />
-			</p>
-
-			<p>
-
-				<img src="images/content/about2-min.jpg" class="w3-round w3-image text-image" alt="Coffee picture">
-
-				Why the apparent reversal in the thinking about coffee? Earlier studies didn't always take into
-				account that
-				known high-risk behaviors, such as smoking and physical inactivity, tended to be more common among
-				heavy
-				coffee
-				drinkers.<br /><br />
-				Studies have shown that coffee may have health benefits, including protecting against Parkinson's
-				disease,
-				type
-				2 diabetes and liver disease, including liver cancer. Coffee also appears to improve cognitive
-				function and
-				decrease the risk of depression.<br /><br />
-				However, the research appears to bear out some risks. High consumption of unfiltered coffee (boiled
-				or
-				espresso)
-				has been associated with mild elevations in cholesterol levels.<br /><br />
-				In addition, some studies found that two or more cups of coffee a day can increase the risk of heart
-				disease
-				in
-				people with a specific — and fairly common — genetic mutation that slows the breakdown of caffeine
-				in the
-				body.
-				So, how quickly you metabolize coffee may affect your health risk.<br /><br />Although coffee may
-				have fewer risks compared with benefits, keep in mind that
-				other
-				beverages, such as milk and
-				some fruit juices, contain nutrients that coffee doesn't. Also, adding cream and sugar to your
-				coffee adds fat
-				and calories — up to hundreds of calories in some cases.
-			</p>
-
-			<p>
-				<em>
-					Hensrud, D. (2019). The surprising health benefits of coffee. [online] Mayo Clinic. Available at:
-					https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/coffee-and-health/faq-20058339
-					[Accessed 7 Oct. 2019].
-				</em>
-			</p>
-		</div>
-
-	</div>
-
-
-	<!-- Container (Contact Section) -->
-	<div class="w3-content w3-container w3-padding-64" id="contact">
-		<h3 class="w3-center">CONTACT</h3>
-
-		<div class="w3-row w3-padding-32 w3-section">
-			<div class=" w3-panel">
-				<div class="w3-large w3-margin-bottom">
-					<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Athlone,
-					Ireland<br>
-					<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 085 825
-					4699<br>
-					<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-					yulia.dovbak@gmail.com<br>
+		<div class="w3-container w3-margin">
+			<div class=" w3-row w3-center w3-dark-grey w3-padding-16">
+				<div>
+					<p1 class="w3-center">
+						Stores all over the world
+					</p1>
 				</div>
-				<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-				<form action="/action_page.php" target="_blank">
-					<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-						<div class="w3-half">
-							<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-						</div>
-						<div class="w3-half">
-							<input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-						</div>
-					</div>
-					<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-					<button class="w3-button w3-black w3-right w3-section" type="submit">
-						<i class="fa fa-paper-plane"></i> SEND MESSAGE
-					</button>
-				</form>
+				<div class="w3-third w3-section">
+					<span class="w3-xlarge">24,395+</span><br>
+					STARBUCKS
+				</div>
+				<div class="w3-third w3-section">
+					<span class="w3-xlarge">3,882+</span><br>
+					COSTA
+				</div>
+				<div class="w3-third w3-section">
+					<span class="w3-xlarge">822 +</span><br>
+					CafeNero
+				</div>
 			</div>
 		</div>
+
+
+
 	</div>
 
 	<!-- Footer -->
-	<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-		<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-		<p>Yuliia Dovbak</a></p>
+	<footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off">
+		<p>Yuliia Dovbak</p>
+		<p>A00277458</p>
 	</footer>
 
 	<script>
-
-		// Modal Image Gallery
-		function onClick(element) {
-			document.getElementById("img01").src = element.src;
-			document.getElementById("modal01").style.display = "block";
-			var captionText = document.getElementById("caption");
-			captionText.innerHTML = element.alt;
-		}
-
-		// Change style of navbar on scroll
-		window.onscroll = function () { myFunction() };
-		function myFunction() {
-			var navbar = document.getElementById("myNavbar");
-			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-				navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-			} else {
-				navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-			}
-		}
-
 		// Used to toggle the menu on small screens when clicking on the menu button
 		function toggleFunction() {
 			var x = document.getElementById("navDemo");

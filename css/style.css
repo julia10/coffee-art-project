@@ -16,6 +16,18 @@ html {
 	line-height: 1.8;
 }
 
+.w3-bar {
+	padding: 0.5rem 1rem;
+}
+
+/* Create a Parallax Effect */
+.bgimg {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .heading-padding{
 	padding-top: 64pt;
 }
