@@ -7,23 +7,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-	body,
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		font-family: "Lato", sans-serif;
-	}
-
-	body,
-	html {
-		height: 100%;
-		color: #6a6e73;
-		line-height: 1.8;
-	}
-
 	/* Create a Parallax Effect */
 	.bgimg-1,
 	.bgimg-2,
@@ -41,21 +24,10 @@
 		min-height: 100%;
 	}
 
-	/* Second image (Cofee Types) */
-	.bgimg-2 {
-		background-image: url("images/content/beans-min.jpg");
-		min-height: 400px;
-	}
 
 	/* Third image (Health) */
 	.bgimg-3 {
 		background-image: url("images/content/background2-min.jpg");
-		min-height: 400px;
-	}
-
-	/* Forth image (Latte Art) */
-	.bgimg-4 {
-		background-image: url("images/content/background3.jpg");
 		min-height: 400px;
 	}
 
@@ -71,7 +43,6 @@
 	@media only screen and (max-device-width: 1024px) {
 
 		.bgimg-1,
-		.bgimg-2,
 		.bgimg-3 {
 			background-attachment: scroll;
 			min-height: 400px;
@@ -93,10 +64,11 @@
 			<a href="#home" class="w3-bar-item w3-button"><i class="fa fa-coffee"></i>HOME</a>
 			<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
 			<a href="#shops" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"></i> SHOPS</a>
-			<a href="#types" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-th"></i> TYPES</a>
-			<a href="#health" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-heart"></i> HEALTH</a>
-			<a href="#latte-art" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-pagelines"></i> LATTE
+			<a href="types.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-th"></i> TYPES</a>
+			<a href="health.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-heart"></i> HEALTH</a>
+			<a href="latte-art.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-pagelines"></i> LATTE
 				ART</a>
+			<a href="report.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-align-left"></i> REPORT</a>
 			<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
 		</div>
 
@@ -104,11 +76,11 @@
 		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
 			<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
 			<a href="#shops" class="w3-bar-item w3-button" onclick="toggleFunction()">SHOPS</a>
-			<a href="#types" class="w3-bar-item w3-button" onclick="toggleFunction()">TYPES</a>
-			<a href="#health" class="w3-bar-item w3-button" onclick="toggleFunction()">HEALTH</a>
-			<a href="#latte-art" class="w3-bar-item w3-button" onclick="toggleFunction()">LATTE ART</a>
+			<a href="types.html" class="w3-bar-item w3-button" ">TYPES</a>
+			<a href=" health.html" class="w3-bar-item w3-button">HEALTH</a>
+			<a href="latte-art.html" class="w3-bar-item w3-button">LATTE ART</a>
+			<a href="report.html" class="w3-bar-item w3-button">REPORT</a>
 			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-			<a href="#" class="w3-bar-item w3-button">SEARCH</a>
 		</div>
 	</div>
 
@@ -207,92 +179,6 @@
 	</div>
 
 
-	<!-- Second Parallax Image with Portfolio Text -->
-	<div class="bgimg-2 w3-display-container w3-opacity-min">
-		<div class="w3-display-middle">
-			<span class="w3-xxlarge w3-text-dark-grey w3-wide">COFFEE TYPES</span>
-		</div>
-	</div>
-
-	<!-- Container (Coffee Types Section) -->
-	<div class="w3-content w3-container w3-padding-32" id="types">
-		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">Types</h3>
-		<p class="w3-margin"><em>Here are some of the most popular coffee types drunk by irish people</em></p><br>
-
-		<!-- First Photo Grid-->
-		<div class="w3-row-padding w3-padding-16 w3-center" id="food">
-
-			<div class="w3-quarter">
-				<img src="images/content/americano-min.jpg" alt="Caffè Americano" onclick="onClick(this)"
-					class="w3-hover-opacity grid-image">
-				<h3>Caffè Americano</h3>
-				<p>An Americano is simply an espresso that has been poured over, or been diluted with hot water.</p>
-			</div>
-
-			<div class="w3-quarter">
-				<img src="images/content/esspresso-min.jpg" alt="Espresso" onclick="onClick(this) "
-					class="w3-hover-opacity grid-image">
-				<h3>Espresso </h3>
-				<p>Espresso is a full-flavored, concentrated form of coffee that is served in “shots.” </p>
-			</div>
-
-			<div class="w3-quarter">
-				<img src="images/content/latte-min.jpg" alt="Latte" onclick="onClick(this)"
-					class="w3-hover-opacity grid-image">
-				<h3>Café Latte</h3>
-				<p>A caffè latte is simply a shot or two of bold, tasty espresso with fresh, sweet steamed milk over it.
-				</p>
-			</div>
-			<div class="w3-quarter">
-				<img src="images/content/machiato-min.jpg" alt="Macchiato" onclick="onClick(this)"
-					class="w3-hover-opacity grid-image">
-				<h3>Espresso macchiato</h3>
-				<p>The espresso macchiato is an espresso topped with steamed milk foam
-				</p>
-			</div>
-		</div>
-
-		<!--Second Photo grid width="100%" height="300px"-->
-		<div class="w3-row-padding w3-padding-16 w3-center">
-			<div class="w3-quarter">
-				<img src="images/content/ices-latte-min.jpg" alt="Iced Latte" onclick="onClick(this)"
-					class="w3-hover-opacity grid-image ">
-				<h3>Iced Latte</h3>
-				<p>A summer version of Café Latte with ice </p>
-			</div>
-			<div class="w3-quarter">
-				<img src="images/content/latteart2.jpg" alt="Cappuccino" onclick="onClick(this)"
-					class="w3-hover-opacity grid-image">
-				<h3>Cappuccino</h3>
-				<p>A cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk foam
-					(microfoam).</p>
-			</div>
-			<div class="w3-quarter">
-				<img src="images/content/flat-white-min.jpg" alt="Flat White" onclick="onClick(this)"
-					class="w3-hover-opacity grid-image">
-				<h3>Flat White</h3>
-				<p>It is comparable to a latte, but smaller in volume and with less microfoam.</p>
-			</div>
-			<div class="w3-quarter">
-				<img src="images/content/irish-coffee-min.jpg" alt="Irish Coffee" onclick="onClick(this)"
-					class="w3-hover-opacity grid-image">
-				<h3>Irish Coffee</h3>
-				<p>It`s a cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with cream.
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- Modal for full size images on click-->
-	<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-		<span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
-				class="fa fa-remove"></i></span>
-		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-			<img id="img01" class="w3-image" width="30%" height="20%">
-			<p id="caption" class="w3-opacity w3-large"></p>
-		</div>
-	</div>
-
 	<!-- Third Parallax Image with Portfolio Text -->
 	<div class="bgimg-3 w3-display-container w3-opacity-min">
 		<div class="w3-display-middle">
@@ -370,38 +256,6 @@
 
 	</div>
 
-	<!-- Latte Art -->
-
-	<!-- Forth Parallax Image with Portfolio Text -->
-	<div class="bgimg-4 w3-display-container w3-opacity-min">
-		<div class="w3-display-middle">
-			<span class="w3-xxlarge w3-text-white w3-wide">LATTE ART</span>
-		</div>
-	</div>
-
-	<!--Health Section-->
-
-	<!-- Container (About Section) -->
-	<div class="w3-content w3-container w3-padding-32" id="latte-art">
-		<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin">A few examples latte drawings</h3>
-		<div class="w3-margin">
-			<p><em>Navigate through images with arrows</em></p><br>
-
-
-			<div class="w3-content" style="max-width:800px;position:relative">
-
-				<img class="mySlides" src="images/slideshow1.jpg" style="width:100%">
-				<img class="mySlides" src="images/slideshow2.jpg" style="width:100%">
-
-				<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
-				<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
-
-			</div>
-
-		</div>
-
-	</div>
-
 
 	<!-- Container (Contact Section) -->
 	<div class="w3-content w3-container w3-padding-64" id="contact">
@@ -443,24 +297,6 @@
 	</footer>
 
 	<script>
-		// Slideshow
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
-			showDivs(slideIndex += n);
-		}
-
-		function showDivs(n) {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			if (n > x.length) { slideIndex = 1 }
-			if (n < 1) { slideIndex = x.length };
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-			x[slideIndex - 1].style.display = "block";
-		}
 
 		// Modal Image Gallery
 		function onClick(element) {

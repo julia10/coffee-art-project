@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    /* Create a Parallax Effect */
+    .bgimg {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    /* Forth image (Latte Art) */
+    .bgimg {
+        background-image: url("images/content/background3.jpg");
+        min-height: 80%;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+
+        .bgimg-1 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+</style>
+
+<title>Coffee Art</title>
+
+<body>
+    	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-coffee"></i>HOME</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+                <a href="#shops" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cutlery"></i> SHOPS</a>
+                <a href="types.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-th"></i> TYPES</a>
+                <a href="health.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-heart"></i> HEALTH</a>
+                <a href="latte-art.html" class="w3-bar-item w3-button w3-hide-small "><i class="fa fa-pagelines"></i> LATTE
+                    ART</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+    
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="index.html" class="w3-bar-item w3-button" >ABOUT</a>
+                <a href="#shops" class="w3-bar-item w3-button" onclick="toggleFunction()">SHOPS</a>
+                <a href="types.html" class="w3-bar-item w3-button" ">TYPES</a>
+                <a href="health.html" class="w3-bar-item w3-button" >HEALTH</a>
+                <a href="latte-art.html" class="w3-bar-item w3-button">LATTE ART</a>
+                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            </div>
+        </div>
+
+    <!--First Parallax Image with Logo Text -->
+    <div class="bgimg w3-display-container w3-opacity-min">
+        <div class="w3-display-bottommiddle w3-padding-64" style="white-space:nowrap;">
+            <span class=" w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">LATTE <span
+                    class="w3-hide-small">ART</span></span>
+        </div>
+    </div>
+
+    <section>
+        <!-- Latte Art Section -->
+        <div class="w3-content w3-container w3-padding-32" id="latte-art">
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin w3-center">A few examples of latte drawings</h3>
+            <div class="w3-margin">
+                <p class="w3-center"><em>Navigate through images with arrows</em></p><br>
+
+
+                <div class="w3-content" style="max-width:800px;position:relative">
+
+                    <img class="mySlides slideshow-image" src="images/slideshow1.jpg">
+                    <img class="mySlides slideshow-image" src="images/slideshow2.jpg">
+
+                    <!-- Next prev buttons-->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <p>Yuliia Dovbak</a></p>
+    </footer>
+
+    <script>
+        // Slideshow (with this in, the navbar is not working)
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
