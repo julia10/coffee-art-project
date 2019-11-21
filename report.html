@@ -7,45 +7,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Lato", sans-serif;
-    }
-
-    body,
-    html {
-        height: 100%;
-        color: #6a6e73;
-        line-height: 1.8;
-    }
-
-
-    /* Paralax image (Latte Art) */
+    /* Report paralax image */
     .bgimg {
-        background-image: url("images/content/latteart1.jpg");
+        background-image: url("images/content/paralax-report.jpg");
         min-height: 100%;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1024px) {
-
-        .bgimg {
-            background-attachment: scroll;
-            min-height: 400px;
-        }
     }
 </style>
 
 <title>Coffee Art</title>
 
 <body>
-
-
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar w3-card w3-white" id="myNavbar">
@@ -82,15 +53,14 @@
     </div>
 
 
-    <div class="w3-content w3-container w3-padding-16">
+    <div class="w3-content w3-container w3-padding-16"  style="overflow-x:auto;">
         <h3 class="w3-center w3-padding-32">Report about technologies used</h3>
-
         <table class="w3-table w3-bordered w3-border w3-white w3-margin">
-            <tr>
-                <th>Page</th>
-                <th>Markup</th>
-                <th>Responvive</th>
-                <th>Description</th>
+            <tr class="w3-brown">
+                <th> <h4>Page</h4></th>
+                <th><h4>Markup</h4></th>
+                <th><h4>Responcive</h4></th>
+                <th><h4>Description</h4></th>
             </tr>
             <tr>
                 <td rowspan="2"> <a href="index.html">Home</a></td>
@@ -103,6 +73,7 @@
                         <li>Text wraps around image</li>
                         <li>Unordered list with images and
                             links to external websites</li>
+                        <li>Responcive layout</li>
                     </ul>
                 </td>
             </tr>
@@ -110,8 +81,6 @@
                 <td>CSS3/W3CSS</td>
                 <td>Yes</td>
             </tr>
-
-
             <tr>
                 <td rowspan="2"><a href="types.html">Types</a></td>
                 <td>HTML5</td>
@@ -128,7 +97,6 @@
                 <td>CSS3/W3CSS</td>
                 <td>Yes</td>
             </tr>
-
             <tr>
                 <td rowspan="2"><a href="health.html">Health</a></td>
                 <td> HTML5</td>
@@ -144,8 +112,6 @@
                 <td>CSS3/W3CSS</td>
                 <td>Yes</td>
             </tr>
-
-
             <tr>
                 <td rowspan="2"><a href="latte-art.html">Latte art</a></td>
                 <td> HTML5</td>
@@ -161,7 +127,6 @@
                 <td>CSS3/W3CSS</td>
                 <td>Yes</td>
             </tr>
-
             <tr>
                 <td rowspan="2"><a href="report.html">Report</a></td>
                 <td> HTML5</td>
@@ -178,7 +143,6 @@
                 <td>CSS3/W3CSS</td>
                 <td>Yes</td>
             </tr>
-
             <tr>
                 <td rowspan="2"><a href="contact.html">Contact</a></td>
                 <td>HTML5</td>
@@ -194,9 +158,35 @@
                 <td>CSS3/W3CSS</td>
                 <td>Yes</td>
             </tr>
-        </table>
-
+        </table> 
     </div>
+
+      <!--Resourses used-->
+      <div class="w3-content w3-container w3-padding-16">
+        <h3 class="w3-center w3-padding-32">Resourses used</h3>
+        <table class="w3-table w3-bordered w3-border w3-white w3-hoverable w3-striped w3-margin">
+            <tr  class="w3-brown">
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Images</td>
+                <td><a href="https://unsplash.com/" target="_blank">unsplash.com</a></td>
+            </tr>
+            <tr>
+                <td>Images</td>
+                <td><a href="https://www.pexels.com/" target="_blank">pexels.com</a></td>
+            </tr>
+            <tr>
+                <td>Text on home page</td>
+                <td><a href="https://www.precisionnutrition.com/all-about-coffee" target="_blank">precisionnutrition.com</a></td>
+            </tr>
+            <tr>
+                <td>Text on health page</td>
+                <td><a href="https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/expert-answers/coffee-and-health/faq-20058339" target="_blank">mayoclinic.org</a></td>
+            </tr>
+        </table>
+    </div>   
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off">
@@ -205,7 +195,6 @@
     </footer>
 
     <script>
-
         // Used to toggle the menu on small screens when clicking on the menu button
         function toggleFunction() {
             var x = document.getElementById("navDemo");
@@ -216,5 +205,4 @@
             }
         }
     </script>
-
 </body>

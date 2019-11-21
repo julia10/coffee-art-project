@@ -7,34 +7,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    .w3-wide {
-        letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-        cursor: pointer;
-    }
-
-    /* Paralax image (Latte Art) */
+    /* Paralax image  */
     .bgimg {
-        background-image: url("images/content/background3.jpg");
+        background-image: url("images/content/paralax-latte-art.jpg");
         min-height: 100%;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1024px) {
-
-        .bgimg {
-            background-attachment: scroll;
-            min-height: 400px;
-        }
     }
 </style>
 
 <title>Coffee Art</title>
 
 <body>
-    
 	<!-- Navbar (sit on top) -->
 	<div class="w3-top">
 		<div class="w3-bar w3-card w3-white" id="myNavbar">
@@ -76,10 +58,12 @@
                 drawings</h3>
             <div class="w3-margin">
                 <p class="w3-center"><em>Navigate through images with arrows</em></p><br>
-                <div class="w3-content" style="max-width:800px;position:relative">
-                    <img class="mySlides slideshow-image" src="images/dragon-latte-art.jpg">
-                    <img class="mySlides slideshow-image" src="images/Latte-Art-heart.jpg">
-                    <img class="mySlides slideshow-image" src="images/colored-latte-art.jpg">
+                <div class="w3-content" style="max-width:800px;position:relative">   
+                    <img class="mySlides slideshow-image" src="images/latte-art1.jpeg">
+                    <img class="mySlides slideshow-image" src="images/latte-art2.jpeg">
+                    <img class="mySlides slideshow-image" src="images/latte-art3.jpeg">
+                    <img class="mySlides slideshow-image" src="images/latte-art4.jpg">
+                    <img class="mySlides slideshow-image" src="images/latte-art5.jpg">
 
                     <!-- Next prev buttons-->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -88,7 +72,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off">
@@ -125,14 +108,6 @@
             dots[slideIndex - 1].className += " active";
         }
 
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
         // Used to toggle the menu on small screens when clicking on the menu button
         function toggleFunction() {
             var x = document.getElementById("navDemo");
@@ -143,7 +118,5 @@
             }
         }
     </script>
-
 </body>
-
 </html>

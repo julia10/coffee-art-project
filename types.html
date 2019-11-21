@@ -7,34 +7,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    /* Forth image (Latte Art) */
+    /* Latte Art paralax image*/
     .bgimg {
-        background-image: url("images/content/beans-min.jpg");
-        min-height: 100%;
-    }
-
-    .w3-wide {
-        letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-        cursor: pointer;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1024px) {
-
-        .bgimg-1 {
-            background-attachment: scroll;
-            min-height: 400px;
-        }
+        background-image: url("images/content/paralax-types.jpg");
     }
 </style>
 
 <title>Coffee Art</title>
 
 <body>
-    
 	<!-- Navbar (sit on top) -->
 	<div class="w3-top">
 		<div class="w3-bar w3-card w3-white" id="myNavbar">
@@ -70,7 +51,6 @@
     </div>
 
     <section>
-
         <!-- Container (Coffee Types Section) -->
         <div class="w3-content w3-container w3-padding-32">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-margin w3-center">Types of coffee</h3>
@@ -79,31 +59,31 @@
 
             <!-- First Photo Grid-->
             <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-
                 <div class="w3-quarter">
-                    <img src="images/content/americano-min.jpg" alt="Caffè Americano" onclick="onClick(this)"
+                    <img src="images/content/americano.jpg" alt="Caffè Americano" onclick="onClick(this)"
                         class="w3-hover-opacity grid-image">
                     <h3>Caffè Americano</h3>
                     <p>An Americano is simply an espresso that has been poured over, or been diluted with hot water.</p>
                 </div>
 
                 <div class="w3-quarter">
-                    <img src="images/content/esspresso-min.jpg" alt="Espresso" onclick="onClick(this) "
+                    <img src="images/content/esspresso.jpg" alt="Espresso" onclick="onClick(this) "
                         class="w3-hover-opacity grid-image">
                     <h3>Espresso </h3>
                     <p>Espresso is a full-flavored, concentrated form of coffee that is served in “shots.” </p>
                 </div>
 
                 <div class="w3-quarter">
-                    <img src="images/content/latte-min.jpg" alt="Latte" onclick="onClick(this)"
+                    <img src="images/content/latte.jpg" alt="Latte" onclick="onClick(this)"
                         class="w3-hover-opacity grid-image">
                     <h3>Café Latte</h3>
                     <p>A caffè latte is simply a shot or two of bold, tasty espresso with fresh, sweet steamed milk over
                         it.
                     </p>
                 </div>
+
                 <div class="w3-quarter">
-                    <img src="images/content/machiato-min.jpg" alt="Macchiato" onclick="onClick(this)"
+                    <img src="images/content/machiato.jpg" alt="Macchiato" onclick="onClick(this)"
                         class="w3-hover-opacity grid-image">
                     <h3>Espresso macchiato</h3>
                     <p>The espresso macchiato is an espresso topped with steamed milk foam
@@ -114,27 +94,30 @@
             <!--Second Photo grid -->
             <div class="w3-row-padding w3-padding-16 w3-center">
                 <div class="w3-quarter">
-                    <img src="images/content/ices-latte-min.jpg" alt="Iced Latte" onclick="onClick(this)"
+                    <img src="images/content/iced-latte.jpg" alt="Iced Latte" onclick="onClick(this)"
                         class="w3-hover-opacity grid-image ">
                     <h3>Iced Latte</h3>
                     <p>A summer version of Café Latte with ice </p>
                 </div>
+
                 <div class="w3-quarter">
-                    <img src="images/content/latteart2.jpg" alt="Cappuccino" onclick="onClick(this)"
+                    <img src="images/content/cappuchino.jpg" alt="Cappuccino" onclick="onClick(this)"
                         class="w3-hover-opacity grid-image">
                     <h3>Cappuccino</h3>
                     <p>A cappuccino is an espresso-based coffee drink that is traditionally prepared with steamed milk
                         foam
                         (microfoam).</p>
                 </div>
+
                 <div class="w3-quarter">
-                    <img src="images/content/flat-white-min.jpg" alt="Flat White" onclick="onClick(this)"
+                    <img src="images/content/flat-white.jpg" alt="Flat White" onclick="onClick(this)"
                         class="w3-hover-opacity grid-image">
                     <h3>Flat White</h3>
                     <p>It is comparable to a latte, but smaller in volume and with less microfoam.</p>
                 </div>
+
                 <div class="w3-quarter">
-                    <img src="images/content/irish-coffee-min.jpg" alt="Irish Coffee" onclick="onClick(this)"
+                    <img src="images/content/irish-coffee.jpg" alt="Irish Coffee" onclick="onClick(this)"
                         class="w3-hover-opacity grid-image">
                     <h3>Irish Coffee</h3>
                     <p>It`s a cocktail consisting of hot coffee, Irish whiskey, and sugar, stirred, and topped with
@@ -163,7 +146,6 @@
     </footer>
 
     <script>
-
         // Modal Image Gallery
         function onClick(element) {
             document.getElementById("img01").src = element.src;
@@ -182,7 +164,5 @@
             }
         }
     </script>
-
 </body>
-
 </html>

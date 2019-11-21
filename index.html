@@ -7,45 +7,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-	/* Create a Parallax Effect */
-	.bgimg-1,
-	.bgimg-2,
-	.bgimg-3,
-	.bgimg-4 {
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
 	/* Paralax image (Coffee home) */
-	.bgimg-1 {
-		background-image: url('images/content/background-min.jpg');
-		min-height: 100%;
-	}
-
-	.w3-wide {
-		letter-spacing: 10px;
-	}
-
-	.w3-hover-opacity {
-		cursor: pointer;
-	}
-
-	/* Turn off parallax scrolling for tablets and phones */
-	@media only screen and (max-device-width: 1024px) {
-
-		.bgimg-1 {
-			background-attachment: scroll;
-			min-height: 400px;
-		}
+	.bgimg {
+		background-image: url('images/content/paralax-home.jpg');
 	}
 </style>
 
 <title>Coffee Art</title>
 
 <body>
-
 	<!-- Navbar (sit on top) -->
 	<div class="w3-top">
 		<div class="w3-bar w3-card w3-white" id="myNavbar">
@@ -75,7 +45,7 @@
 	</div>
 
 	<!--First Parallax Image with Logo Text -->
-	<div class="bgimg-1 w3-display-container w3-opacity-min">
+	<div class="bgimg w3-display-container w3-opacity-min">
 		<div class="w3-display-bottommiddle w3-padding-64" style="white-space:nowrap;">
 			<span class=" w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">COFFEE <span
 					class="w3-hide-small">ART</span></span>
@@ -89,7 +59,7 @@
 		<div class="w3-row">
 			<p class="w3-margin w3-center"><em>We all love coffee</em></p><br>
 			<p class="w3-margin">
-				<img src="images/content/about-coffee-min.jpg" class="w3-round w3-image text-image" alt="Coffee photo">
+				<img src="images/content/about-coffee.jpg" class="w3-round w3-image text-image" alt="Coffee photo">
 
 				Coffee is among the most consumed — and controversial — beverages in the world. While coffee should
 				be treated with care and avoided altogether by those who metabolize it poorly, it also provides health
@@ -106,8 +76,6 @@
 				feel so good?</p>
 		</div>
 	</div>
-
-
 
 	<!--Most popular coffee shops list-->
 	<div class="w3-content w3-container">
@@ -126,7 +94,6 @@
 						<span>Founded in 1971, London, United Kingdom</span>
 					</div>
 				</li>
-
 				<li class="w3-bar">
 					<img src="images/content/logos/starbucks_logo.png" class="w3-bar-item w3-circle w3-hide-small"
 						style="width:85px">
@@ -136,7 +103,6 @@
 						<span>Founded in 1971, Pike Place Market, Seattle, Washington, United States</span>
 					</div>
 				</li>
-
 				<li class="w3-bar">
 					<img src="images/content/logos/caffe_nero.jpg" class="w3-bar-item w3-circle w3-hide-small"
 						style="width:85px">
@@ -149,6 +115,7 @@
 			</ul>
 		</div>
 
+		<!--Responcive layout-->
 		<div class="w3-container w3-margin">
 			<div class=" w3-row w3-center w3-dark-grey w3-padding-16">
 				<div>
@@ -170,9 +137,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
 	</div>
 
 	<!-- Footer -->
